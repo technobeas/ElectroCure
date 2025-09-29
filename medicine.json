@@ -1,0 +1,617 @@
+[
+  {
+    "medicine": "Acnewash (Drops)",
+    "symptoms": ["Acne", "Pimples", "Black Heads"]
+  },
+  {
+    "medicine": "Allergen (Drops)",
+    "symptoms": ["Any type of Allergy"]
+  },
+  {
+    "medicine": "Asthmex (Drops)",
+    "symptoms": ["Mild & severe Bronchial Asthma"]
+  },
+  {
+    "medicine": "Baby Tone –E (Syrup)",
+    "symptoms": ["Growth-promoting tonic for infants"]
+  },
+  {
+    "medicine": "Blood Cure-E (Drops)",
+    "symptoms": ["Blood purification"]
+  },
+  {
+    "medicine": "BR-E",
+    "symptoms": ["Improves memory", "Corrects forgetfulness"]
+  },
+  {
+    "medicine": "Constipex (Tablets)",
+    "symptoms": ["Constipation (all grades)"]
+  },
+  {
+    "medicine": "Diabetex (Drops)",
+    "symptoms": ["Diabetes", "Hyperglycaemia"]
+  },
+  {
+    "medicine": "Diarrex (Tablets)",
+    "symptoms": ["Diarrhoea", "Dysentery", "Colic"]
+  },
+  {
+    "medicine": "Digestive-E",
+    "symptoms": ["Indigestion", "Dyspepsia", "Acidity", "Colic pain"]
+  },
+  {
+    "medicine": "Domfin Pills",
+    "symptoms": ["Acute & Chronic tonsillitis"]
+  },
+  {
+    "medicine": "Electro Balm",
+    "symptoms": ["Headaches (various causes)"]
+  },
+  {
+    "medicine": "Elc. Ear Cure Drops",
+    "symptoms": ["All types of ear problems"]
+  },
+  {
+    "medicine": "Elc. Green Salve (Ointment)",
+    "symptoms": ["External use for dressing"]
+  },
+  {
+    "medicine": "Elc. Nasal (Drops)",
+    "symptoms": ["Influenza", "Coryza", "Sneezing", "Nasal Polypus"]
+  },
+  {
+    "medicine": "Elc. Pain oil",
+    "symptoms": ["Paralysis", "Polio", "Gout", "Arthritic Pain"]
+  },
+  {
+    "medicine": "Elc. Slim (Drops)",
+    "symptoms": ["Obesity (all grades)"]
+  },
+  {
+    "medicine": "Elc. (Uni Massage Oil)",
+    "symptoms": ["Body weakness of nerves & muscles"]
+  },
+  {
+    "medicine": "Epi-Nil (Drops)",
+    "symptoms": ["Epilepsy (any kind)"]
+  },
+  {
+    "medicine": "Fairex (Lotion)",
+    "symptoms": ["Acne", "Promotes healthy skin"]
+  },
+  {
+    "medicine": "Feverex Pills",
+    "symptoms": ["Fever", "Headache", "Bodyache"]
+  },
+  {
+    "medicine": "Fever Tone-E",
+    "symptoms": ["Fevers & associated symptoms"]
+  },
+  {
+    "medicine": "General Tone-E",
+    "symptoms": ["General family tonic"]
+  },
+  {
+    "medicine": "GRO-E",
+    "symptoms": ["Promotes growth & height"]
+  },
+  {
+    "medicine": "Hairex (Drops)",
+    "symptoms": ["Hair problems (internal use)"]
+  },
+  {
+    "medicine": "Hair Tone-E",
+    "symptoms": ["Strengthens hair", "Beautifies hair"]
+  },
+  {
+    "medicine": "HI –E",
+    "symptoms": ["High blood pressure (mild to moderate)"]
+  },
+  {
+    "medicine": "Hypotex",
+    "symptoms": ["Hypotension", "Angina pectoris"]
+  },
+  {
+    "medicine": "Khansi Cure –E",
+    "symptoms": ["Chronic bronchitis", "Cough"]
+  },
+  {
+    "medicine": "KI –E",
+    "symptoms": ["Renal functions", "Hyperuricemia"]
+  },
+  {
+    "medicine": "Liver Tone-E",
+    "symptoms": ["Liver diseases"]
+  },
+  {
+    "medicine": "Marina (Eye Drop)",
+    "symptoms": ["Eye diseases", "Strengthens eyes"]
+  },
+  {
+    "medicine": "Meltex (Drops)",
+    "symptoms": ["Male sexual problems"]
+  },
+  {
+    "medicine": "Menso Cure -E",
+    "symptoms": ["Female uterine tonic"]
+  },
+  {
+    "medicine": "Nervine",
+    "symptoms": ["Nerve weakness"]
+  },
+  {
+    "medicine": "Pilorex (Drops)",
+    "symptoms": ["Piles & related problems"]
+  },
+  {
+    "medicine": "Power Tone –E",
+    "symptoms": ["Rejuvenator tonic", "Energy stimulant"]
+  },
+  {
+    "medicine": "Rheumex (Drops)",
+    "symptoms": ["Gout", "Hyperuricemia"]
+  },
+  {
+    "medicine": "Rhinitex (Tablets)",
+    "symptoms": ["Common cold", "Headache"]
+  },
+  {
+    "medicine": "Stonex (Drops)",
+    "symptoms": ["Renal stone", "Gall bladder stone"]
+  },
+  {
+    "medicine": "SINO-E",
+    "symptoms": ["Sinusitis", "Severe headache"]
+  },
+  {
+    "medicine": "Vascline Natural",
+    "symptoms": ["Skin care", "Cracked lips", "Cracked heels"]
+  },
+  {
+    "medicine": "Viral Tab",
+    "symptoms": ["All kinds of fever"]
+  },
+  {
+    "medicine": "Wormex (Drops)",
+    "symptoms": ["Worm infection"]
+  },
+  {
+    "medicine": "Power Tone –E (Spl.)",
+    "symptoms": ["Powerful energy stimulant"]
+  },
+  {
+    "medicine": "Heart Tone-E (Spl.)",
+    "symptoms": ["Senile heart problems"]
+  },
+  {
+    "medicine": "Elc. Slim –E (Spl.)",
+    "symptoms": ["Obesity (all grades)"]
+  },
+  {
+    "medicine": "Liver Tone –E (Spl.)",
+    "symptoms": ["Liver disorders"]
+  },
+  {
+    "medicine": "Meltex – E (Spl.)",
+    "symptoms": ["Sexual problems (male & female)"]
+  },
+  {
+    "medicine": "Antiseptic Haldi H.Q.",
+    "symptoms": ["Antiseptic"]
+  },
+  {
+    "medicine": "Electro Pain Killer (Drops)",
+    "symptoms": ["Pain (all types)"]
+  },
+  {
+    "medicine": "Vital Force (Spl.)",
+    "symptoms": ["Vitality in the body"]
+  },
+  {
+    "medicine": "Breasto E- Special (Drops)",
+    "symptoms": ["Breast enlargement"]
+  },
+  {
+    "medicine": "Breasto Cream (Spl.)",
+    "symptoms": ["Breast enlargement"]
+  },
+  {
+    "medicine": "Garlic –Q (Allium Sativam)",
+    "symptoms": ["Cholesterol control"]
+  },
+  {
+    "medicine": "Ginger – Q (Zingiber-E)",
+    "symptoms": ["Antiseptic", "Anti-allergic"]
+  },
+  {
+    "medicine": "Swine Flue",
+    "symptoms": ["Swine flu", "Viral disease"]
+  },
+  {
+    "medicine": "Liver Kit",
+    "symptoms": ["Liver disorder"]
+  },
+  {
+    "medicine": "Electro Piles Gel",
+    "symptoms": ["Piles (without operation)"]
+  },
+  {
+    "medicine": "Dengue –E (Spl.)",
+    "symptoms": ["Dengue fever"]
+  },
+  {
+    "medicine": "Electro Tulsi",
+    "symptoms": ["Anti-oxidant", "Anti-bacterial"]
+  },
+  {
+    "medicine": "Dental Cleaner",
+    "symptoms": ["Teeth cleaning"]
+  },
+  {
+    "medicine": "Jointo Pain –E",
+    "symptoms": ["Joint pain"]
+  },
+  {
+    "medicine": "Anti Corona –E",
+    "symptoms": ["Coronavirus prevention"]
+  },
+  {
+    "medicine": "Quick Saver (Hand Sanitizer-E)",
+    "symptoms": ["Virus infection prevention (including Coronavirus)"]
+  },
+  {
+    "medicine": "Cancer-E Special",
+    "symptoms": ["Cancer symptoms relief"]
+  },
+  {
+    "medicine": "Angiticos (A1)",
+    "symptoms": [
+      "Headache",
+      "Diseases of arteries",
+      "Bilious constitution",
+      "Nervous constitution"
+    ]
+  },
+  {
+    "medicine": "Angiticos (A2)",
+    "symptoms": [
+      "Haematuria",
+      "Leucoderma",
+      "Elephantiasis",
+      "Leprosy",
+      "Neuralgia",
+      "Gangrene"
+    ]
+  },
+  {
+    "medicine": "Angiticos (A3)",
+    "symptoms": ["Blood in urine", "Blood sputum", "Blood vomiting"]
+  },
+  {
+    "medicine": "Febrifugo (F1)",
+    "symptoms": [
+      "Metabolic disorders",
+      "Diabetes",
+      "Malaria",
+      "Pituitary gland disorders"
+    ]
+  },
+  {
+    "medicine": "Febrifugo (F2)",
+    "symptoms": ["Oedematous swelling", "Dry Coryza", "Acute Nephritis"]
+  },
+  {
+    "medicine": "Scorofoloso (S1)",
+    "symptoms": ["Master Remedy – useful for all diseases"]
+  },
+  {
+    "medicine": "Scorofoloso (S2)",
+    "symptoms": ["Analgesic", "Stone removal", "Paralysis"]
+  },
+  {
+    "medicine": "Scorofoloso (S3)",
+    "symptoms": ["Inflammation", "Skin diseases", "Tonsillitis"]
+  },
+  {
+    "medicine": "Scorofoloso (S4)",
+    "symptoms": ["Liver Disorder", "Sterility", "Insect bite"]
+  },
+  {
+    "medicine": "Scorofoloso (S5)",
+    "symptoms": ["Renal Calculi", "Lumbago", "Headache", "Allergy"]
+  },
+  {
+    "medicine": "Scorofoloso (S6)",
+    "symptoms": ["Urinary stones", "Metabolism issues", "Internal injury"]
+  },
+  {
+    "medicine": "Scorofoloso (S7)",
+    "symptoms": ["Lymphatic imbalance", "Metabolism issues"]
+  },
+  {
+    "medicine": "Scorofoloso (S8)",
+    "symptoms": ["Bone marrow issues", "Stomatitis", "Anemia"]
+  },
+  {
+    "medicine": "Scorofoloso (S9)",
+    "symptoms": ["Mucous membrane", "Liver disorder", "Lymphatic disorder"]
+  },
+  {
+    "medicine": "Scorofoloso (S10)",
+    "symptoms": ["Indigestion", "Diarrhoea", "Dysentery", "Gastritis"]
+  },
+  {
+    "medicine": "Scorofoloso (S11)",
+    "symptoms": ["Nausea", "Vomiting"]
+  },
+  {
+    "medicine": "Scorofoloso (S12)",
+    "symptoms": ["Eye problems", "Dysmenorrhoea"]
+  },
+  {
+    "medicine": "Canceroso (C1)",
+    "symptoms": ["Tumours", "Skin eruptions", "Post-delivery ailments"]
+  },
+  {
+    "medicine": "Canceroso (C2)",
+    "symptoms": [
+      "Bladder catarrh",
+      "Carcinoma",
+      "Degenerative changes of liver & gall bladder"
+    ]
+  },
+  {
+    "medicine": "Canceroso (C3)",
+    "symptoms": [
+      "Mucous membrane issues",
+      "Tissue destruction",
+      "Severe abdominal pain"
+    ]
+  },
+  {
+    "medicine": "Canceroso (C4)",
+    "symptoms": [
+      "Calculi formation",
+      "Bone deformity",
+      "Dentition issues",
+      "Necrosis"
+    ]
+  },
+  {
+    "medicine": "Canceroso (C5)",
+    "symptoms": ["Tonsil & face swelling", "Burning pain"]
+  },
+  {
+    "medicine": "Canceroso (C6)",
+    "symptoms": [
+      "Renal tissues trouble",
+      "Urinary tract trouble",
+      "Expels uric acid"
+    ]
+  },
+  {
+    "medicine": "Canceroso (C7)",
+    "symptoms": ["Wound healing", "Connective tissue disorders"]
+  },
+  {
+    "medicine": "Canceroso (C8)",
+    "symptoms": [
+      "Intestinal functions",
+      "Liver issues",
+      "Gall bladder issues",
+      "Gland issues"
+    ]
+  },
+  {
+    "medicine": "Canceroso (C9)",
+    "symptoms": [
+      "Impure lymph",
+      "Impure blood",
+      "Metabolic disorders",
+      "Malnutrition"
+    ]
+  },
+  {
+    "medicine": "Canceroso (C10)",
+    "symptoms": ["Hypogastric pain", "Jaundice", "Vomiting"]
+  },
+  {
+    "medicine": "Canceroso (C11)",
+    "symptoms": [
+      "Nervous system disorders",
+      "Liver diseases",
+      "Skin issues",
+      "Mucous membrane"
+    ]
+  },
+  {
+    "medicine": "Canceroso (C12)",
+    "symptoms": ["Inflammatory conditions", "Dental fistula"]
+  },
+  {
+    "medicine": "Canceroso (C13)",
+    "symptoms": [
+      "Rheumatic pains",
+      "Mucous membrane issues",
+      "Typhoid",
+      "Eye swelling & pain"
+    ]
+  },
+  {
+    "medicine": "Canceroso (C14)",
+    "symptoms": ["Diphtheria", "Tonsillitis", "Throat inflammation", "Pyrexia"]
+  },
+  {
+    "medicine": "Canceroso (C15)",
+    "symptoms": ["Stomach disorders", "Ulcerative issues", "Gastric carcinoma"]
+  },
+  {
+    "medicine": "Canceroso (C16)",
+    "symptoms": ["Weak digestion", "Disturbed blood circulation"]
+  },
+  {
+    "medicine": "Canceroso (C17)",
+    "symptoms": ["Urinary system disorders", "Renal stones", "Kidney disorders"]
+  },
+  {
+    "medicine": "Vermifugo (Ver1)",
+    "symptoms": ["Intestinal worms", "Infections", "Necrosis", "Gangrene"]
+  },
+  {
+    "medicine": "Vermifugo (Ver2)",
+    "symptoms": ["Abdominal pain", "White mucous in stool", "Vomiting"]
+  },
+  {
+    "medicine": "Limfatico (L1)",
+    "symptoms": [
+      "Antacid",
+      "Anti-inflammatory",
+      "Blood purification",
+      "Skin diseases",
+      "Menstrual disorders"
+    ]
+  },
+  {
+    "medicine": "Limfatico (L2)",
+    "symptoms": [
+      "Anemia",
+      "Glandular enlargement",
+      "Rheumatic fever",
+      "Leucorrhoea"
+    ]
+  },
+  {
+    "medicine": "Venerio (Ven1)",
+    "symptoms": [
+      "Venereal diseases",
+      "Necrosis",
+      "Gangrene",
+      "Hereditary diseases"
+    ]
+  },
+  {
+    "medicine": "Venerio (Ven2)",
+    "symptoms": [
+      "Venereal diseases",
+      "Genito-urinary tract disorders",
+      "Mucous membrane issues",
+      "Gonorrhoea"
+    ]
+  },
+  {
+    "medicine": "Venerio (Ven3)",
+    "symptoms": ["Male & female regenerative system", "Skin disorders"]
+  },
+  {
+    "medicine": "Venerio (Ven4)",
+    "symptoms": ["Venereal diseases", "Acute syphilis"]
+  },
+  {
+    "medicine": "Venerio (Ven5)",
+    "symptoms": ["Gonorrhoeal complications", "Venereal disorders"]
+  },
+  {
+    "medicine": "Pettorale (P1)",
+    "symptoms": [
+      "Bronchial asthma",
+      "Bronchitis",
+      "Pulmonary allergies",
+      "Tuberculosis"
+    ]
+  },
+  {
+    "medicine": "Pettorale (P2)",
+    "symptoms": ["Tuberculosis of lungs", "Laryngitis", "Pneumonia"]
+  },
+  {
+    "medicine": "Pettorale (P3)",
+    "symptoms": ["Pulmonary catarrh", "Asthma", "Whooping cough"]
+  },
+  {
+    "medicine": "Pettorale (P4)",
+    "symptoms": ["Mucous membrane diseases (nose & throat)"]
+  },
+  {
+    "medicine": "Pettorale (P5)",
+    "symptoms": ["Hereditary ailments", "Respiratory ailments"]
+  },
+  {
+    "medicine": "Pettorale (P6)",
+    "symptoms": ["Degenerative respiratory tract diseases", "Bronchitis"]
+  },
+  {
+    "medicine": "Pettorale (P7)",
+    "symptoms": ["Tuberculosis", "Blood expectoration"]
+  },
+  {
+    "medicine": "Pettorale (P8)",
+    "symptoms": [
+      "Chronic pulmonary T.B.",
+      "Chronic respiratory allergy",
+      "Violent cough"
+    ]
+  },
+  {
+    "medicine": "Pettorale (P9)",
+    "symptoms": ["Pneumonia", "Bronchitis", "Whooping cough"]
+  },
+  {
+    "medicine": "Electricities (YE)",
+    "symptoms": [
+      "Intestinal mucous membrane issues",
+      "Peripheral nervous issues",
+      "Infected wounds"
+    ]
+  },
+  {
+    "medicine": "Electricities (WE)",
+    "symptoms": [
+      "Relieves tiredness",
+      "Anti-inflammatory",
+      "Analgesic",
+      "Sedative"
+    ]
+  },
+  {
+    "medicine": "Electricities (BE)",
+    "symptoms": [
+      "Heart issues (left side)",
+      "Arterial system issues",
+      "Stops bleeding"
+    ]
+  },
+  {
+    "medicine": "Electricities (RE)",
+    "symptoms": ["Nervous system issues", "Spinal cord issues", "Brain issues"]
+  },
+  {
+    "medicine": "Electricities (GE)",
+    "symptoms": ["Tumours", "Ulcers", "Swelling", "Muscular pain", "Joint pain"]
+  },
+  {
+    "medicine": "A.P.P",
+    "symptoms": [
+      "Healthy skin",
+      "Soft skin",
+      "Removes dandruff",
+      "Removes pimples",
+      "Removes acne"
+    ]
+  },
+  {
+    "medicine": "Synthesis (SY)",
+    "symptoms": [
+      "General tonic",
+      "Improves immune system",
+      "Increases resistance power"
+    ]
+  },
+  {
+    "medicine": "SLASS",
+    "symptoms": [
+      "Constipation",
+      "Intestinal disorders",
+      "Indigestion of heavy food"
+    ]
+  }
+]

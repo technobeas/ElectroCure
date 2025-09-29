@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electro-Pathy Remedy Finder</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        padding: 20px;
+        max-width: 800px;
+        margin: auto;
+        background-color: #f9f9f9;
+        color: #333;
+      }
+
+      h2 {
+        color: #007bff;
+        margin-bottom: 20px;
+        font-size: 24px;
+        text-align: center;
+      }
+
+      label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 8px;
+      }
+
+      input[type="text"] {
+        padding: 12px;
+        font-size: 16px;
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        margin-bottom: 10px;
+      }
+
+      button {
+        padding: 12px 20px;
+        font-size: 16px;
+        background-color: #007bff;
+        border: none;
+        border-radius: 6px;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-right: 10px;
+        margin-top: 5px;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+      .button-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 20px;
+      }
+
+      .result {
+        margin-top: 30px;
+      }
+
+      .remedy-section {
+        background-color: #fff;
+        padding: 15px 20px;
+        margin-bottom: 20px;
+        border-left: 5px solid #007bff;
+        border-radius: 6px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        transition: transform 0.2s;
+      }
+
+      .remedy-section:hover {
+        transform: scale(1.01);
+      }
+
+      .remedy-name {
+        font-weight: bold;
+        color: #222;
+        font-size: 20px;
+        margin-bottom: 5px;
+      }
+
+      .remedy-symptoms {
+        color: #555;
+        font-size: 15px;
+      }
+
+      @media (max-width: 600px) {
+        body {
+          padding: 15px;
+        }
+
+        h2 {
+          font-size: 20px;
+        }
+
+        input[type="text"] {
+          padding: 10px;
+          font-size: 15px;
+        }
+
+        button {
+          font-size: 15px;
+          padding: 10px 16px;
+          flex: 1;
+        }
+
+        .remedy-name {
+          font-size: 18px;
+        }
+
+        .remedy-symptoms {
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2>🔍 Electro-Pathy Remedy Finder</h2>
+
+    <label for="symptoms">Enter symptoms :</label>
+    <input
+      type="text"
+      id="symptoms"
+      placeholder="e.g., acne pimples allergy"
+      list="symptom-list"
+    />
+
+    <datalist id="symptom-list">
+      <option value="Acne"></option>
+      <option value="Pimples"></option>
+      <option value="Black Heads"></option>
+      <option value="Allergy"></option>
+      <option value="Bronchial Asthma"></option>
+      <option value="Growth in infants"></option>
+    </datalist>
+
+    <div class="button-group">
+      <button onclick="findRemedies()">Find Remedies</button>
+      <button onclick="clearInput()" style="background-color: #6c757d">
+        Clear
+      </button>
+    </div>
+
+    <div class="result" id="results"></div>
+
+    <script>
+      let data = [];
+
+      // Load JSON
+      fetch("medicine.json")
+        .then((response) => response.json())
+        .then((json) => (data = json))
+        .catch((err) => {
+          console.error("Error loading data:", err);
+          document.getElementById("results").innerHTML =
+            "<p style='color:red;'>Failed to load remedy data.</p>";
+        });
+
+      function findRemedies() {
+        const input = document.getElementById("symptoms").value.toLowerCase();
+        const inputTokens = input
+          .split(/[\s,]+/)
+          .map((s) => s.trim())
+          .filter(Boolean);
+
+        const matchedRemedies = [];
+
+        data.forEach((entry) => {
+          const matched = entry.symptoms.some((symptom) => {
+            const symptomLower = symptom.toLowerCase();
+            return inputTokens.some((token) => symptomLower.includes(token));
+          });
+          if (matched) {
+            matchedRemedies.push(entry);
+          }
+        });
+
+        const resultsDiv = document.getElementById("results");
+        if (matchedRemedies.length === 0) {
+          resultsDiv.innerHTML = "<p>No matching remedies found.</p>";
+          return;
+        }
+
+        resultsDiv.innerHTML = matchedRemedies
+          .map(
+            (entry) => `
+            <div class="remedy-section">
+              <div class="remedy-name">${entry.medicine}</div>
+              <div class="remedy-symptoms">
+                <strong>Symptoms:</strong> ${entry.symptoms.join(", ")}
+              </div>
+            </div>
+          `
+          )
+          .join("");
+      }
+
+      function clearInput() {
+        document.getElementById("symptoms").value = "";
+        document.getElementById("results").innerHTML = "";
+        document.getElementById("symptoms").focus();
+      }
+    </script>
+  </body>
+</html>
