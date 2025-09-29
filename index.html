@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <title>Electro-Pathy Remedy Finder</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
 
     <style>
       * {
@@ -166,33 +167,47 @@
           return;
         }
 
+        // Prepare a list of all symptoms with references to medicines
+        // Each entry is { symptom: string, medicine: string, symptomsList: array }
+        let searchData = [];
+        data.forEach((entry) => {
+          entry.symptoms.forEach((symptom) => {
+            searchData.push({
+              symptom: normalizeText(symptom),
+              symptomRaw: symptom,
+              medicine: entry.medicine,
+              symptomsList: entry.symptoms,
+            });
+          });
+        });
+
+        // Create Fuse instance with options
+        const fuse = new Fuse(searchData, {
+          keys: ["symptom"],
+          threshold: 0.4, // Adjust this for sensitivity; lower = stricter
+          includeScore: true,
+        });
+
         const rootSymptomMap = {};
 
-        data.forEach((entry) => {
-          entry.symptoms.forEach((symptomRaw) => {
-            const symptom = normalizeText(symptomRaw);
+        // For each input symptom token, do a fuzzy search and accumulate matches
+        inputTokens.forEach((inputSymptom) => {
+          const results = fuse.search(inputSymptom);
 
-            inputTokens.forEach((root) => {
-              const rootWords = root.split(" ");
+          results.forEach(({ item }) => {
+            if (!rootSymptomMap[inputSymptom])
+              rootSymptomMap[inputSymptom] = {};
+            if (!rootSymptomMap[inputSymptom][item.symptomRaw])
+              rootSymptomMap[inputSymptom][item.symptomRaw] = new Map();
 
-              // Check if all words in root symptom are found in the data symptom
-              const allWordsMatch = rootWords.every((word) =>
-                symptom.includes(word)
+            if (
+              !rootSymptomMap[inputSymptom][item.symptomRaw].has(item.medicine)
+            ) {
+              rootSymptomMap[inputSymptom][item.symptomRaw].set(
+                item.medicine,
+                item.symptomsList
               );
-
-              if (allWordsMatch) {
-                if (!rootSymptomMap[root]) rootSymptomMap[root] = {};
-                if (!rootSymptomMap[root][symptomRaw])
-                  rootSymptomMap[root][symptomRaw] = new Map();
-
-                if (!rootSymptomMap[root][symptomRaw].has(entry.medicine)) {
-                  rootSymptomMap[root][symptomRaw].set(
-                    entry.medicine,
-                    entry.symptoms
-                  );
-                }
-              }
-            });
+            }
           });
         });
 
