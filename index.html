@@ -142,16 +142,22 @@
             "<p style='color:red;'>Failed to load remedy data.</p>";
         });
 
-      function findRemedies() {
-        const input = document
-          .getElementById("symptoms")
-          .value.toLowerCase()
+      // Normalize text: lowercase, remove punctuation, trim spaces
+      function normalizeText(text) {
+        return text
+          .toLowerCase()
+          .replace(/[.,&\/#!$%\^*;:{}=\-_`~()]/g, "")
+          .replace(/\s+/g, " ")
           .trim();
+      }
 
-        // Split by commas for phrase searching
-        const inputTokens = input
+      function findRemedies() {
+        const inputRaw = document.getElementById("symptoms").value;
+
+        // Split by commas first, then normalize each symptom
+        const inputTokens = inputRaw
           .split(",")
-          .map((s) => s.trim())
+          .map((s) => normalizeText(s))
           .filter(Boolean);
 
         if (inputTokens.length === 0) {
@@ -163,16 +169,24 @@
         const rootSymptomMap = {};
 
         data.forEach((entry) => {
-          entry.symptoms.forEach((symptom) => {
-            const symptomLower = symptom.toLowerCase();
-            inputTokens.forEach((root) => {
-              if (symptomLower.includes(root)) {
-                if (!rootSymptomMap[root]) rootSymptomMap[root] = {};
-                if (!rootSymptomMap[root][symptom])
-                  rootSymptomMap[root][symptom] = new Map();
+          entry.symptoms.forEach((symptomRaw) => {
+            const symptom = normalizeText(symptomRaw);
 
-                if (!rootSymptomMap[root][symptom].has(entry.medicine)) {
-                  rootSymptomMap[root][symptom].set(
+            inputTokens.forEach((root) => {
+              const rootWords = root.split(" ");
+
+              // Check if all words in root symptom are found in the data symptom
+              const allWordsMatch = rootWords.every((word) =>
+                symptom.includes(word)
+              );
+
+              if (allWordsMatch) {
+                if (!rootSymptomMap[root]) rootSymptomMap[root] = {};
+                if (!rootSymptomMap[root][symptomRaw])
+                  rootSymptomMap[root][symptomRaw] = new Map();
+
+                if (!rootSymptomMap[root][symptomRaw].has(entry.medicine)) {
+                  rootSymptomMap[root][symptomRaw].set(
                     entry.medicine,
                     entry.symptoms
                   );
@@ -202,20 +216,20 @@
                   )
                   .join("");
                 return `
-                <div class="symptom-line">
-                  <span class="symptom-name">${symptom}</span>: 
-                  <div class="medicine-name">${medBlocks}</div>
-                </div>`;
+            <div class="symptom-line">
+              <span class="symptom-name">${symptom}</span>: 
+              <div class="medicine-name">${medBlocks}</div>
+            </div>`;
               })
               .join("");
 
             return `
-            <div class="root-group">
-              <div class="root-title">Root Symptom: ${
-                root.charAt(0).toUpperCase() + root.slice(1)
-              }</div>
-              ${symptomBlocks}
-            </div>`;
+        <div class="root-group">
+          <div class="root-title">${
+            root.charAt(0).toUpperCase() + root.slice(1)
+          }</div>
+          ${symptomBlocks}
+        </div>`;
           })
           .join("");
       }
