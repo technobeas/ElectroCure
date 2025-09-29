@@ -143,7 +143,6 @@
             "<p style='color:red;'>Failed to load remedy data.</p>";
         });
 
-      // Normalize text: lowercase, remove punctuation, trim spaces
       function normalizeText(text) {
         return text
           .toLowerCase()
@@ -155,7 +154,6 @@
       function findRemedies() {
         const inputRaw = document.getElementById("symptoms").value;
 
-        // Split by commas first, then normalize each symptom
         const inputTokens = inputRaw
           .split(",")
           .map((s) => normalizeText(s))
@@ -167,8 +165,6 @@
           return;
         }
 
-        // Prepare a list of all symptoms with references to medicines
-        // Each entry is { symptom: string, medicine: string, symptomsList: array }
         let searchData = [];
         data.forEach((entry) => {
           entry.symptoms.forEach((symptom) => {
@@ -181,20 +177,33 @@
           });
         });
 
-        // Create Fuse instance with options
         const fuse = new Fuse(searchData, {
           keys: ["symptom"],
-          threshold: 0.4, // Adjust this for sensitivity; lower = stricter
+          threshold: 0.4,
           includeScore: true,
         });
 
         const rootSymptomMap = {};
 
-        // For each input symptom token, do a fuzzy search and accumulate matches
         inputTokens.forEach((inputSymptom) => {
-          const results = fuse.search(inputSymptom);
+          const inputWords = inputSymptom.split(" ");
 
-          results.forEach(({ item }) => {
+          // Try word-based partial match: All input words must be present in the symptom
+          const partialMatches = searchData.filter((item) => {
+            return inputWords.every((word) => item.symptom.includes(word));
+          });
+
+          let matchedItems = [];
+
+          if (partialMatches.length > 0) {
+            matchedItems = partialMatches;
+          } else {
+            // Fallback to fuzzy
+            const fuzzyResults = fuse.search(inputSymptom);
+            matchedItems = fuzzyResults.map((res) => res.item);
+          }
+
+          matchedItems.forEach((item) => {
             if (!rootSymptomMap[inputSymptom])
               rootSymptomMap[inputSymptom] = {};
             if (!rootSymptomMap[inputSymptom][item.symptomRaw])
@@ -231,20 +240,20 @@
                   )
                   .join("");
                 return `
-            <div class="symptom-line">
-              <span class="symptom-name">${symptom}</span>: 
-              <div class="medicine-name">${medBlocks}</div>
-            </div>`;
+      <div class="symptom-line">
+        <span class="symptom-name">${symptom}</span>: 
+        <div class="medicine-name">${medBlocks}</div>
+      </div>`;
               })
               .join("");
 
             return `
-        <div class="root-group">
-          <div class="root-title">${
-            root.charAt(0).toUpperCase() + root.slice(1)
-          }</div>
-          ${symptomBlocks}
-        </div>`;
+    <div class="root-group">
+      <div class="root-title">${
+        root.charAt(0).toUpperCase() + root.slice(1)
+      }</div>
+      ${symptomBlocks}
+    </div>`;
           })
           .join("");
       }
