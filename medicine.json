@@ -268,6 +268,7 @@
     "symptoms": [
       "Headache",
       "Diseases of arteries",
+      "heart",
       "Bilious constitution",
       "Nervous constitution"
     ]
@@ -280,12 +281,24 @@
       "Elephantiasis",
       "Leprosy",
       "Neuralgia",
-      "Gangrene"
+      "Gangrene",
+      "Nose bleed",
+      "haemorrhoids",
+      "varicose veins",
+      "Venous circulation"
     ]
   },
   {
     "medicine": "Angiticos (A3)",
-    "symptoms": ["Blood in urine", "Blood sputum", "Blood vomiting"]
+    "symptoms": [
+      "Blood in urine",
+      "Blood sputum",
+      "Blood vomiting",
+      "deficiency of Blood",
+      "General debility, chlorosis after loss of blood",
+      "marasmus",
+      "neurasthenia"
+    ]
   },
   {
     "medicine": "Febrifugo (F1)",
@@ -301,8 +314,15 @@
     "symptoms": ["Oedematous swelling", "Dry Coryza", "Acute Nephritis"]
   },
   {
-    "medicine": "Scorofoloso (S1)",
-    "symptoms": ["Master Remedy – useful for all diseases"]
+    "medicine": "S1",
+    "symptoms": [
+      "Universal remedy for the entire metabolism",
+      "Regulates stomach and intestinal function",
+      "Supports glandular appendages and secretions",
+      "Stimulates metabolism and appetite",
+      "Improves constitutional vitality with regular use",
+      "Extraordinarily favorable influence on the whole constitution"
+    ]
   },
   {
     "medicine": "Scorofoloso (S2)",
@@ -310,7 +330,12 @@
   },
   {
     "medicine": "Scorofoloso (S3)",
-    "symptoms": ["Inflammation", "Skin diseases", "Tonsillitis"]
+    "symptoms": [
+      "Inflammation",
+      "Skin diseases",
+      "Tonsillitis",
+      "chronic herpes"
+    ]
   },
   {
     "medicine": "Scorofoloso (S4)",
@@ -318,11 +343,24 @@
   },
   {
     "medicine": "Scorofoloso (S5)",
-    "symptoms": ["Renal Calculi", "Lumbago", "Headache", "Allergy"]
+    "symptoms": [
+      "Renal Calculi",
+      "Lumbago",
+      "Headache",
+      "Allergy",
+      "formation of the bile",
+      "secreting uric acid"
+    ]
   },
   {
     "medicine": "Scorofoloso (S6)",
-    "symptoms": ["Urinary stones", "Metabolism issues", "Internal injury"]
+    "symptoms": [
+      "Urinary stones",
+      "Metabolism issues",
+      "Internal injury",
+      "arteriosclerosis",
+      "dropsy"
+    ]
   },
   {
     "medicine": "Scorofoloso (S7)",
@@ -338,15 +376,32 @@
   },
   {
     "medicine": "Scorofoloso (S10)",
-    "symptoms": ["Indigestion", "Diarrhoea", "Dysentery", "Gastritis"]
+    "symptoms": [
+      "Indigestion",
+      "Diarrhoea",
+      "Dysentery",
+      "Gastritis",
+      "nervous gastric"
+    ]
   },
   {
     "medicine": "Scorofoloso (S11)",
-    "symptoms": ["Nausea", "Vomiting"]
+    "symptoms": [
+      "Nausea",
+      "Vomiting",
+      "Pharynx and gastric nerves",
+      "morning sickness",
+      "indisposition at railways , air and sea trips",
+      "vomiting with sick headache"
+    ]
   },
   {
     "medicine": "Scorofoloso (S12)",
-    "symptoms": ["Eye problems", "Dysmenorrhoea"]
+    "symptoms": [
+      "Eye problems",
+      "Dysmenorrhoea",
+      "inflammation of the conjunctiva"
+    ]
   },
   {
     "medicine": "Canceroso (C1)",
@@ -356,6 +411,8 @@
     "medicine": "Canceroso (C2)",
     "symptoms": [
       "Bladder catarrh",
+      "hemorrhoids",
+      "mucous membrane of the intestines",
       "Carcinoma",
       "Degenerative changes of liver & gall bladder"
     ]
@@ -365,7 +422,8 @@
     "symptoms": [
       "Mucous membrane issues",
       "Tissue destruction",
-      "Severe abdominal pain"
+      "Severe abdominal pain",
+      "goitre"
     ]
   },
   {
@@ -374,7 +432,8 @@
       "Calculi formation",
       "Bone deformity",
       "Dentition issues",
-      "Necrosis"
+      "Necrosis",
+      "splintering of nails, fall and loss of hairs, teeth and their insufficient growths"
     ]
   },
   {
@@ -386,7 +445,11 @@
     "symptoms": [
       "Renal tissues trouble",
       "Urinary tract trouble",
-      "Expels uric acid"
+      "Expels uric acid",
+      "mineral metabolism Kidney",
+      "arteriosclerosis",
+      "stones",
+      "gout"
     ]
   },
   {
@@ -413,7 +476,12 @@
   },
   {
     "medicine": "Canceroso (C10)",
-    "symptoms": ["Hypogastric pain", "Jaundice", "Vomiting"]
+    "symptoms": [
+      "Hypogastric pain",
+      "Jaundice",
+      "Vomiting",
+      "Nervous troubles of gastrointestinal canals , large and small intestine, great gut, liver, gall bladder"
+    ]
   },
   {
     "medicine": "Canceroso (C11)",
@@ -434,7 +502,8 @@
       "Rheumatic pains",
       "Mucous membrane issues",
       "Typhoid",
-      "Eye swelling & pain"
+      "Eye swelling & pain",
+      "remedy of pharynx, pharyngeal tonsils"
     ]
   },
   {
@@ -451,15 +520,34 @@
   },
   {
     "medicine": "Canceroso (C17)",
-    "symptoms": ["Urinary system disorders", "Renal stones", "Kidney disorders"]
+    "symptoms": [
+      "Urinary system disorders",
+      "Renal stones",
+      "Kidney disorders",
+      "nocturnal enuresis",
+      "micturition",
+      "retention of urine",
+      "contration of the bladder"
+    ]
   },
   {
     "medicine": "Vermifugo (Ver1)",
-    "symptoms": ["Intestinal worms", "Infections", "Necrosis", "Gangrene"]
+    "symptoms": [
+      "Intestinal worms",
+      "Infections",
+      "Necrosis",
+      "Gangrene",
+      "parasites and microbes all over the body"
+    ]
   },
   {
     "medicine": "Vermifugo (Ver2)",
-    "symptoms": ["Abdominal pain", "White mucous in stool", "Vomiting"]
+    "symptoms": [
+      "Abdominal pain",
+      "White mucous in stool",
+      "Vomiting",
+      "more fit for external use and enema and ointments"
+    ]
   },
   {
     "medicine": "Limfatico (L1)",
@@ -612,6 +700,67 @@
       "Constipation",
       "Intestinal disorders",
       "Indigestion of heavy food"
+    ]
+  },
+  {
+    "medicine": "Lin1",
+    "symptoms": [
+      "The whole lymphatic system state of decomposistion of lymph and blood. Nervous debility, spasms glands and their tumours and inflammations, chronically irruptions"
+    ]
+  },
+  {
+    "medicine": "White Fluid",
+    "symptoms": [
+      "Neuralgia",
+      "Neurasthenia",
+      "Migraine",
+      "Functional troubles of the nervous system",
+      "Sickly feelings",
+      "Neurotic conditions"
+    ]
+  },
+  {
+    "medicine": "Yellow Fluid",
+    "symptoms": [
+      "Spasms of gastrointestinal tract and gall bladder",
+      "Fever",
+      "Intestinal disturbances",
+      "Muscular convulsions",
+      "Tickling cough",
+      "Psychic/nervous excitement",
+      "Choleric temperament imbalance",
+      "Doses of YE and RE are of a very favorable effect if alternatively used"
+    ]
+  },
+  {
+    "medicine": "Red Fluid",
+    "symptoms": [
+      "Paralysis",
+      "Debility",
+      "Defective nervous activities",
+      "Diseases of inner secretion",
+      "Joint disorders without inflammation"
+    ]
+  },
+  {
+    "medicine": "Green Fluid",
+    "symptoms": [
+      "Chronic ulcerating wounds (fistulas, boils, varicose veins, hemorrhoids)",
+      "Ulcerative angina",
+      "Gum boils",
+      "Chronic rheumatic pain",
+      "Arteriosclerosis",
+      "Feeble reactions to illness",
+      "Green Fluid (GE) is combined with C5 and A2 for chronic diseases"
+    ]
+  },
+  {
+    "medicine": "Blue Fluid",
+    "symptoms": [
+      "Internal bleeding",
+      "Weak arterial system",
+      "Sanguine temperament imbalance",
+      "Acts as a stimulant undiluted, sedative diluted, and a strong styptic for internal bleeding; used with A2 internally and externally."
     ]
   }
 ]
